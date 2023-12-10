@@ -1,0 +1,56 @@
+<view class='banner'>
+<image src='https://charfole-blog.oss-cn-shenzhen.aliyuncs.com/image/image-20210406122025984.png'></image>
+</view>
+
+<view class='button'>
+<view class='tongue' catchtap='clickToTake'  hover-class="click">
+<image src='/images/diet.png'></image>
+</view>
+<view class='shop'  catchtap='clickLogs' hover-class="click">
+<image src='/images/shop.png'></image>
+</view>
+</view>
+
+<view class='solar'>
+<view class="solor_radius"><view></view></view>
+<view class='solar_text'>临近节气</view>
+<view class='solar_image'>
+  <view class="solar_image_title">大雪</view>
+  <view class="solar_image_eng">Greater Snow</view>
+  <view class="solar_image_date">十月廿十五</view>
+  <view class="solar_image_cns">大雪节气，喝上一杯豆浆，滋补身体，迎接寒冷的冬天。</view>
+</view>
+</view>
+
+
+  
+
+<view class='weather'>
+<view class='weather_text'>今日健康指数</view>
+
+<view class="weather_container">
+<view class='weather_image'>
+  <view class='weather_image_text'>优</view>
+  <image src='/images/air.png'></image>
+</view>
+<view class='weather_image'>
+  <view class='weather_image_text'>90%</view>
+  <image src='/images/damp.png'></image>
+</view>
+<view class='weather_image'>
+  <view class='weather_image_text'>弱</view>
+  <image src='/images/ziwai.png'></image>
+</view>
+</view>
+</view>
+
+<view class='tips'>
+<view class='tips_image'>
+  <view class='tips_text'><text>{{diet_tips}}</text></view>
+  <image src='/images/food_rec.png'></image>
+</view>
+<view class='tips_image'>
+  <view class='tips_text'><text>{{sprit_tips}}</text></view>
+  <image src='/images/spit_rec.png'></image>
+</view>
+</view>

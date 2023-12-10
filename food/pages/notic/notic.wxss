@@ -1,0 +1,15 @@
+.box{/**定义用于设置边框的样式**/
+    margin:20rpx;
+    padding: 20rpx;
+    border: 5px solid silver;
+} 
+.title{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 15px;
+    color: red;
+}
+.box text{
+    font-family: "隶书";
+    font-size: 30px;
+}

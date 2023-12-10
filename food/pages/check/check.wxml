@@ -1,0 +1,18 @@
+<view class="welcome">
+<p>欢迎使用营养师模式</p>
+</view>
+<view class='login_block' >
+  <view>
+  <!-- <span class="iconfont icon-geren"></span> -->
+  <input type='text' placeholder="请输入姓名" bindinput='inputUsr' class='input'>
+  </input>
+  </view>
+  <view>
+  <!-- <span class="iconfont icon-mima1"></span> -->
+  <input password='true' placeholder="请输入证书编号" bindinput='inputNum'class='input'>
+  </input>
+  </view>
+  <button type='primary' bindtap='confirmNum' class="confirm">确定</button>
+
+</view>
+

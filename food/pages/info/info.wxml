@@ -1,0 +1,79 @@
+<!-- <view class="cell">
+<text>头像</text>
+<input name="input" style="background-color: #FFFFFF" placeholder="请输入" />
+</view> -->
+<!-- <view class="cell">
+<text>年龄</text>
+<view>{{obj.age}}</view>
+<image src="../../images/向右箭头.png"></image>
+</view> -->
+<form class="page__bd" bindsubmit="formSubmit" bindreset="formReset">
+    <!-- 头像 -->
+    <view class="head">
+    <text>头像</text>
+    <image src='{{obj.url}}'></image>
+    </view> 
+    <!-- 分割线 -->
+    <view class='line'></view>
+    <!-- 昵称 -->
+    <view class="section">
+      <text>昵称</text>
+      <input placeholder="请输入" maxlength="8" />
+    </view>
+    <view class='line'></view>
+    <!-- 年龄 -->
+    <view class="section">
+      <text>年龄</text>
+      <input placeholder="请输入" maxlength="3" />
+    </view>
+    <view class='line'></view>
+    <!-- 性别 -->
+    <view class="section">
+      <text>性别</text>
+      <input placeholder="请输入" maxlength="2" />
+    </view>
+    <view class='line'></view>
+    <!-- 地区 -->
+    <view class="section">
+      <text>地区</text>
+      <picker name="areaPicker" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <view class="picker">
+          {{array[index]}}
+        </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <!-- 出生日期 -->
+    <view class="section">
+      <text>出生日期</text>
+      <picker name="datePicker" mode="date" value="{{date}}" start="1900-01-01" end="2100-12-31" bindchange="bindDateChange">
+        <view class="picker_date">
+         {{date}}
+        </view>
+      </picker>
+    </view>
+    <view class='line'></view>
+    <!-- 过敏史 -->
+    <view class="condition">
+      <text>过敏史</text>
+      <input placeholder="请输入"/>
+    </view>
+    <view class='line'></view>
+    <!-- 疾病史 -->
+    <view class="condition">
+      <text>疾病史</text>
+      <input placeholder="请输入"/>
+    </view>
+    <view class='line'></view>
+    <!-- 兴趣喜好 -->
+    <view class="section">
+      <text>兴趣喜好</text>
+      <image src="../../images/向右箭头.png" bindtap="goInterest"></image>
+    </view>
+    <view class='line'></view>
+    <!-- 按钮 -->
+    <view class="btn-area">
+      <button form-type="submit">保存</button>
+      <button form-type="reset">重置</button>
+    </view>
+  </form>

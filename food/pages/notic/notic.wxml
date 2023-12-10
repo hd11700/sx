@@ -1,0 +1,8 @@
+<view class='box'>
+  <view class='title'>！！重要通知</view>
+  <view>
+    <text>此功能仅对营养师开放，若要使用请先完成认证。</text>
+  </view>
+  ========================
+</view>
+<button type="primary" bindtap="check">点击认证</button>

@@ -1,0 +1,20 @@
+<!--导航条-->
+<view class="navbar">
+ <text wx:for="{{navbar}}" data-idx="{{index}}" class="item {{currentTab==index ? 'active' : ''}}" wx:key="unique" bindtap="navbarTap">{{item}}</text>
+</view>
+<!--全部-->
+<view hidden="{{currentTab!==0}}">
+ tab_01
+</view>
+<!--待付款-->
+<view hidden="{{currentTab!==1}}">
+ tab_02
+</view>
+<!--进行中-->
+<view hidden="{{currentTab!==2}}">
+ tab_03
+</view>
+<!--已失效-->
+<view hidden="{{currentTab!==3}}">
+ tab_04
+</view>
